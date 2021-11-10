@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<script>
+    var formulario = document.getElementById("formulario");
+    window.onload = iniciar;
+
+    function iniciar() {
+        document.getElementById("formulario").style.display = "block";
+        document.getElementById("diploma").style.display = "none";
+        document.getElementById("formulario").addEventListener("submit", (e) => {
+            e.preventDefault();
+            enviar();
+        });
+    }
+
+    document.getElementById()
+
+    function añadir_jugador(){
+        
+
+
+    }
+</script>
+
+
+<body>
+
+    <form id="formulario">
+        <label for="nombre">Número de jugadores</label><br>
+        <input type="number" id="num_jugadores"><br>
+        <input type="button" value="Añadir Jugador" id="añadir_jugador" >
+        
+
+
+
+        <label for="caja">Título de la actividad</label><br>
+        <textarea id="caja" name="caja" maxlength="100"
+            default="Indica el texto que aparecerá en el diploma..."></textarea>
+        <br>
+        <label for="password">Contraseña</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="fecha">Fecha</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <label for="calificacion">Calificación</label><br>
+        <input type="number" id="calificacion" name="calificacion"><br>
+        <label for="esAlumno">¿Eres alumno del centro?</label><br>
+        <input type="radio" id="esAlumno" name="esAlumno"><br>
+        <input type="radio" id="noEsAlumno" name="noEsAlumno"><br>
+        <label for="email" id="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label for="valoracion" id="valoracion">Valoracion</label><br>
+        <input type="range" id="valoracion" name="valoracion" min="1" max="10"><br>
+        <label for="condiciones" id="condiciones">Condiciones</label><br>
+        <input type="checkbox" id="condiciones" name="condiciones"><br>
+        <br>
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    <div id="diploma"></div>
+
+</body>
+
+</html>
